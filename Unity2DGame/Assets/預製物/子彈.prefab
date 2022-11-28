@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 797413280901727764}
   - component: {fileID: 6715714601465945847}
   - component: {fileID: -8086791901413586058}
+  - component: {fileID: 1394645359098127038}
   m_Layer: 7
   m_Name: "\u5B50\u5F48"
   m_TagString: Untagged
@@ -128,7 +129,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &6715714601465945847
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,5 +155,18 @@ ConstantForce2D:
   m_GameObject: {fileID: 7884102251687915542}
   m_Enabled: 1
   m_Force: {x: 0, y: 0}
-  m_RelativeForce: {x: 100, y: 0}
+  m_RelativeForce: {x: 50, y: 0}
   m_Torque: 0
+--- !u!114 &1394645359098127038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884102251687915542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010d66dfd6ebb444d9a9f1465f4c3f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 0.81

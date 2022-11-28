@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 782583210812232069}
   - component: {fileID: 2571222017088847793}
   - component: {fileID: 6956507236656268980}
-  m_Layer: 0
+  - component: {fileID: 651097852}
+  - component: {fileID: 651097853}
+  m_Layer: 6
   m_Name: "\u6575\u6A5F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +147,38 @@ CircleCollider2D:
   m_Offset: {x: 0.15, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &651097852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782583210812232068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0578cef1fcec64dbcd5a40c6d74c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBullet: {fileID: 7884102251687915542, guid: 20b4e37b5b87c23449909c33db41af72, type: 3}
+  pointSpawn: {fileID: 8513159043509241366}
+  soundFire: {fileID: 8300000, guid: 033b1daf4512444018111f90f909d172, type: 3}
+  interval: 2
+--- !u!114 &651097853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782583210812232068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92eba10d722351945912b3b5524a6530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabExplosion: {fileID: 287252635216638527, guid: db06cf2fffb58d74a937153a1616aa5e, type: 3}
+  nameTarget: "\u5B50\u5F48"
+  soundHit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
+  soundExplosion: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
 --- !u!1 &1947660630539787849
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,11 +202,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947660630539787849}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -1.287, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 782583210812232071}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
